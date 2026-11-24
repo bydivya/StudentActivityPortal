@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Portal</title>
+    <meta name="description" content="Student events and registration">
+
+    <style>
+        body {
+            background-color: #f4f0ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #6c63a8;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section, article, aside {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #6c63a8;
+        }
+
+        article {
+            border-left: 5px solid #a99be7;
+        }
+
+        aside {
+            background-color: #e5defc;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            background-color: #6c63a8;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #514887;
+        }
+
+        footer {
+            background-color: #6c63a8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Activity Portal</h1>
+        <p>Welcome to our university events page!</p>
+
+        <nav>
+            <a href="#events">Events</a>
+            <a href="#form">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>Here you can explore upcoming events and register for them.</p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Tech Fest</h3>
+                <p>Join us for coding and technology activities.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Event</h3>
+                <p>Enjoy music, dance and other performances.</p>
+            </article>
+
+            <article>
+                <h3>Sports Day</h3>
+                <p>Participate in fun sports and games.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Notice</h2>
+            <p>Registration for events is now open.</p>
+        </aside>
+
+        <section id="form">
+            <h2>Registration Form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Student Details</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <br><br>
+
+                    <label for="dept">Department:</label>
+                    <select id="dept">
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose Event</legend>
+
+                    <input type="radio" id="tech" name="event">
+                    <label for="tech">Tech Fest</label>
+
+                    <input type="radio" id="culture" name="event">
+                    <label for="culture">Cultural Event</label>
+
+                    <input type="radio" id="sport" name="event">
+                    <label for="sport">Sports Day</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests</legend>
+
+                    <input type="checkbox" id="coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="music">
+                    <label for="music">Music</label>
+
+                    <input type="checkbox" id="sports">
+                    <label for="sports">Sports</label>
+                </fieldset>
+
+                <label for="msg">Message:</label>
+                <br>
+                <textarea id="msg" rows="3"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student Activity Portal - 2026</p>
+    </footer>
+
+</body>
+</html>
